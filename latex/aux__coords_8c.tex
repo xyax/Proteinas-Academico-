@@ -1,0 +1,78 @@
+\hypertarget{aux__coords_8c}{\section{aux\-\_\-coords.\-c File Reference}
+\label{aux__coords_8c}\index{aux\-\_\-coords.\-c@{aux\-\_\-coords.\-c}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}aux\-\_\-coords.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{aux__coords_8c_afa180327b8446b6145c23ae7d765c9eb}{numero\-\_\-de\-\_\-args\-\_\-par} (char $\ast$args, \hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+int \hyperlink{aux__coords_8c_a96a6fdd8ace4b2d3a9a914a32be95b51}{so\-\_\-numeros} (char $\ast$ag)
+\item 
+void \hyperlink{aux__coords_8c_afabfa85329303bfd7a1911f3d60c1b1a}{guarda\-\_\-coords} (char $\ast$args, \hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+void \hyperlink{aux__coords_8c_a12ed4667bba825cafcc07ceac162937e}{imprime\-\_\-coords} (\hyperlink{structproteina}{proteina} $\ast$p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{aux__coords_8c_afabfa85329303bfd7a1911f3d60c1b1a}{\index{aux\-\_\-coords.\-c@{aux\-\_\-coords.\-c}!guarda\-\_\-coords@{guarda\-\_\-coords}}
+\index{guarda\-\_\-coords@{guarda\-\_\-coords}!aux_coords.c@{aux\-\_\-coords.\-c}}
+\subsubsection[{guarda\-\_\-coords}]{\setlength{\rightskip}{0pt plus 5cm}void guarda\-\_\-coords (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{args, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{aux__coords_8c_afabfa85329303bfd7a1911f3d60c1b1a}
+Guarda as coordenadas na estrutura coordenadas 
+\begin{DoxyParams}{Parameters}
+{\em recebe} & uma string de coordenadas e a proteina \\
+\hline
+\end{DoxyParams}
+\hypertarget{aux__coords_8c_a12ed4667bba825cafcc07ceac162937e}{\index{aux\-\_\-coords.\-c@{aux\-\_\-coords.\-c}!imprime\-\_\-coords@{imprime\-\_\-coords}}
+\index{imprime\-\_\-coords@{imprime\-\_\-coords}!aux_coords.c@{aux\-\_\-coords.\-c}}
+\subsubsection[{imprime\-\_\-coords}]{\setlength{\rightskip}{0pt plus 5cm}void imprime\-\_\-coords (
+\begin{DoxyParamCaption}
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{aux__coords_8c_a12ed4667bba825cafcc07ceac162937e}
+Imprime as coordenadas 
+\begin{DoxyParams}{Parameters}
+{\em Proteina.} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{aux__coords_8c_afa180327b8446b6145c23ae7d765c9eb}{\index{aux\-\_\-coords.\-c@{aux\-\_\-coords.\-c}!numero\-\_\-de\-\_\-args\-\_\-par@{numero\-\_\-de\-\_\-args\-\_\-par}}
+\index{numero\-\_\-de\-\_\-args\-\_\-par@{numero\-\_\-de\-\_\-args\-\_\-par}!aux_coords.c@{aux\-\_\-coords.\-c}}
+\subsubsection[{numero\-\_\-de\-\_\-args\-\_\-par}]{\setlength{\rightskip}{0pt plus 5cm}int numero\-\_\-de\-\_\-args\-\_\-par (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{args, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{aux__coords_8c_afa180327b8446b6145c23ae7d765c9eb}
+Analisa se o número de argumentos é par. 
+\begin{DoxyParams}{Parameters}
+{\em recebe} & um string e a proteina. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se ímpar(\-F\-A\-L\-S\-E) e algo diferente de 0 se par (T\-R\-U\-E). 
+\end{DoxyReturn}
+\hypertarget{aux__coords_8c_a96a6fdd8ace4b2d3a9a914a32be95b51}{\index{aux\-\_\-coords.\-c@{aux\-\_\-coords.\-c}!so\-\_\-numeros@{so\-\_\-numeros}}
+\index{so\-\_\-numeros@{so\-\_\-numeros}!aux_coords.c@{aux\-\_\-coords.\-c}}
+\subsubsection[{so\-\_\-numeros}]{\setlength{\rightskip}{0pt plus 5cm}int so\-\_\-numeros (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ag}
+\end{DoxyParamCaption}
+)}}\label{aux__coords_8c_a96a6fdd8ace4b2d3a9a914a32be95b51}
+Testa se uma string possui apenas dígitos. 
+\begin{DoxyParams}{Parameters}
+{\em recebe} & um string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se for digito. Retorna 0 se não for digito 
+\end{DoxyReturn}

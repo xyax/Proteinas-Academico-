@@ -1,0 +1,208 @@
+\hypertarget{prot_8c}{\section{prot.\-c File Reference}
+\label{prot_8c}\index{prot.\-c@{prot.\-c}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}estru.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}prototipos.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}erro.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}utils.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}aux\-\_\-coords.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}aux\-\_\-dobrar.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}aux\-\_\-validar.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}aux\-\_\-compactar.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}aux\-\_\-energia.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{prot_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\item 
+void \hyperlink{prot_8c_a97ad14c70153cce67df4b3b3a1cedf66}{interpretador} (\hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+int \hyperlink{prot_8c_a4d4c508e1df35b69093881ab881dad6e}{interpretar} (char $\ast$linha, \hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+int \hyperlink{prot_8c_a258c6dfd82279584d8ef804510f0813d}{cmd\-\_\-seq} (char $\ast$str, \hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+int \hyperlink{prot_8c_a7f3228697e3abb9b612de641bccd52eb}{cmd\-\_\-coords} (char $\ast$ag, \hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+int \hyperlink{prot_8c_ac62c5094cd7072e0c295c70d3ab4e664}{cmd\-\_\-dobrar} (char $\ast$args, \hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+int \hyperlink{prot_8c_a458e2bbcb547173ce617d53b2c6800a4}{cmd\-\_\-validar} (\hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+int \hyperlink{prot_8c_a299c088ff73aa17821b98897aa39615f}{cmd\-\_\-compactar} (\hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+int \hyperlink{prot_8c_a6aebb0903b6da586bb9762b8573da2e6}{cmd\-\_\-gravar} (char $\ast$nome\-\_\-ficheiro, \hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+int \hyperlink{prot_8c_a7c53e33bc6078dd9ebc11c03d497416c}{cmd\-\_\-latex} (char $\ast$nome\-\_\-fich, \hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+int \hyperlink{prot_8c_a48b5150f32a05b3aca6d35f979b0b346}{cmd\-\_\-energia} (char $\ast$ag, \hyperlink{structproteina}{proteina} $\ast$p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{prot_8c_a299c088ff73aa17821b98897aa39615f}{\index{prot.\-c@{prot.\-c}!cmd\-\_\-compactar@{cmd\-\_\-compactar}}
+\index{cmd\-\_\-compactar@{cmd\-\_\-compactar}!prot.c@{prot.\-c}}
+\subsubsection[{cmd\-\_\-compactar}]{\setlength{\rightskip}{0pt plus 5cm}int cmd\-\_\-compactar (
+\begin{DoxyParamCaption}
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{prot_8c_a299c088ff73aa17821b98897aa39615f}
+Se anteriormente tiver sido introduzida uma proteina válida, compacta a sequência de 'A' e 'B' de forma a consumirem o menor número possível de caracteres. 
+\begin{DoxyParams}{Parameters}
+{\em Proteina.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se compactar, -\/1 se houver algum erro. 
+\end{DoxyReturn}
+\hypertarget{prot_8c_a7f3228697e3abb9b612de641bccd52eb}{\index{prot.\-c@{prot.\-c}!cmd\-\_\-coords@{cmd\-\_\-coords}}
+\index{cmd\-\_\-coords@{cmd\-\_\-coords}!prot.c@{prot.\-c}}
+\subsubsection[{cmd\-\_\-coords}]{\setlength{\rightskip}{0pt plus 5cm}int cmd\-\_\-coords (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ag, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{prot_8c_a7f3228697e3abb9b612de641bccd52eb}
+Guarda as coordenadas se forem válidas e retorna as coordenadas guardadas se forem invocadas sem argumentos. 
+\begin{DoxyParams}{Parameters}
+{\em recebe} & uma sequência de coordenadas e a proteina. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se coordenadas guardadas forem válidas. Retorna -\/1 (mensagem de erro) 
+\end{DoxyReturn}
+\hypertarget{prot_8c_ac62c5094cd7072e0c295c70d3ab4e664}{\index{prot.\-c@{prot.\-c}!cmd\-\_\-dobrar@{cmd\-\_\-dobrar}}
+\index{cmd\-\_\-dobrar@{cmd\-\_\-dobrar}!prot.c@{prot.\-c}}
+\subsubsection[{cmd\-\_\-dobrar}]{\setlength{\rightskip}{0pt plus 5cm}int cmd\-\_\-dobrar (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{args, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{prot_8c_ac62c5094cd7072e0c295c70d3ab4e664}
+Se receber argumentos dobrará conforme a sequência se for invocada sem argumentos dobrará tudo com 'F'. 
+\begin{DoxyParams}{Parameters}
+{\em recebe} & como argumentos (args) 'F', 'D' ou 'E' . Recebe também a proteina. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se dobrar a sequência. Retorna -\/1 (mensagem de erro) 
+\end{DoxyReturn}
+\hypertarget{prot_8c_a48b5150f32a05b3aca6d35f979b0b346}{\index{prot.\-c@{prot.\-c}!cmd\-\_\-energia@{cmd\-\_\-energia}}
+\index{cmd\-\_\-energia@{cmd\-\_\-energia}!prot.c@{prot.\-c}}
+\subsubsection[{cmd\-\_\-energia}]{\setlength{\rightskip}{0pt plus 5cm}int cmd\-\_\-energia (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ag, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{prot_8c_a48b5150f32a05b3aca6d35f979b0b346}
+Calcula o valor da energia de uma dada sequência de 'A' e 'B', válida. 
+\begin{DoxyParams}{Parameters}
+{\em Nos} & argumentos (args) poderá ser invocada sem argumentos ou com 3 argumentos (nas devidas condições). Recebe também a proteina. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 caso calcule a energia e -\/1 caso ocorra algum erro. 
+\end{DoxyReturn}
+\hypertarget{prot_8c_a6aebb0903b6da586bb9762b8573da2e6}{\index{prot.\-c@{prot.\-c}!cmd\-\_\-gravar@{cmd\-\_\-gravar}}
+\index{cmd\-\_\-gravar@{cmd\-\_\-gravar}!prot.c@{prot.\-c}}
+\subsubsection[{cmd\-\_\-gravar}]{\setlength{\rightskip}{0pt plus 5cm}int cmd\-\_\-gravar (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nome\-\_\-ficheiro, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{prot_8c_a6aebb0903b6da586bb9762b8573da2e6}
+Grava ficheiro com sequência e coordenadas. 
+\begin{DoxyParams}{Parameters}
+{\em recebe} & um argumento (nome do ficheiro) e a proteina. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 quando grava. Retorna -\/1 (mensagem de erro) 
+\end{DoxyReturn}
+\hypertarget{prot_8c_a7c53e33bc6078dd9ebc11c03d497416c}{\index{prot.\-c@{prot.\-c}!cmd\-\_\-latex@{cmd\-\_\-latex}}
+\index{cmd\-\_\-latex@{cmd\-\_\-latex}!prot.c@{prot.\-c}}
+\subsubsection[{cmd\-\_\-latex}]{\setlength{\rightskip}{0pt plus 5cm}int cmd\-\_\-latex (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nome\-\_\-fich, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{prot_8c_a7c53e33bc6078dd9ebc11c03d497416c}
+Cria um ficheiro latex se tiver sequência e coordenadas válidas. 
+\begin{DoxyParams}{Parameters}
+{\em recebe} & um argumento (nome do ficheiro) e a proteina. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 quando cria ficheiro. Retorna -\/1 (mensagem de erro) 
+\end{DoxyReturn}
+\hypertarget{prot_8c_a258c6dfd82279584d8ef804510f0813d}{\index{prot.\-c@{prot.\-c}!cmd\-\_\-seq@{cmd\-\_\-seq}}
+\index{cmd\-\_\-seq@{cmd\-\_\-seq}!prot.c@{prot.\-c}}
+\subsubsection[{cmd\-\_\-seq}]{\setlength{\rightskip}{0pt plus 5cm}int cmd\-\_\-seq (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{prot_8c_a258c6dfd82279584d8ef804510f0813d}
+Guarda as coordenadas se forem válidas e retorna as coordenadas guardadas se forem invocadas sem argumentos 
+\begin{DoxyParams}{Parameters}
+{\em recebe} & uma sequência de 'A' e 'B' e uma proteina. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se sequência guardada for válida. Retorna -\/1 (mensagem de erro) 
+\end{DoxyReturn}
+\hypertarget{prot_8c_a458e2bbcb547173ce617d53b2c6800a4}{\index{prot.\-c@{prot.\-c}!cmd\-\_\-validar@{cmd\-\_\-validar}}
+\index{cmd\-\_\-validar@{cmd\-\_\-validar}!prot.c@{prot.\-c}}
+\subsubsection[{cmd\-\_\-validar}]{\setlength{\rightskip}{0pt plus 5cm}int cmd\-\_\-validar (
+\begin{DoxyParamCaption}
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{prot_8c_a458e2bbcb547173ce617d53b2c6800a4}
+Imprime S\-I\-M ou N\-A\-O. 
+\begin{DoxyParams}{Parameters}
+{\em Proteina.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 quando válida. Retorna -\/1 (mensagem de erro) 
+\end{DoxyReturn}
+\hypertarget{prot_8c_a97ad14c70153cce67df4b3b3a1cedf66}{\index{prot.\-c@{prot.\-c}!interpretador@{interpretador}}
+\index{interpretador@{interpretador}!prot.c@{prot.\-c}}
+\subsubsection[{interpretador}]{\setlength{\rightskip}{0pt plus 5cm}void interpretador (
+\begin{DoxyParamCaption}
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{prot_8c_a97ad14c70153cce67df4b3b3a1cedf66}
+manda intrepretar o buffer. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & e proteina \\
+\hline
+\end{DoxyParams}
+\hypertarget{prot_8c_a4d4c508e1df35b69093881ab881dad6e}{\index{prot.\-c@{prot.\-c}!interpretar@{interpretar}}
+\index{interpretar@{interpretar}!prot.c@{prot.\-c}}
+\subsubsection[{interpretar}]{\setlength{\rightskip}{0pt plus 5cm}int interpretar (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{linha, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{prot_8c_a4d4c508e1df35b69093881ab881dad6e}
+intrepreta o buffer e reencaminha para o comando, caso seja válido \begin{DoxyReturn}{Returns}
+retorna 1 caso comando realizado com sucesso e retorna -\/1 caso haja qualquer erro. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em string} & com comando e argumentos e a proteina. \\
+\hline
+\end{DoxyParams}
+\hypertarget{prot_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{prot.\-c@{prot.\-c}!main@{main}}
+\index{main@{main}!prot.c@{prot.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{prot_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}

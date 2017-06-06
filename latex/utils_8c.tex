@@ -1,0 +1,50 @@
+\hypertarget{utils_8c}{\section{utils.\-c File Reference}
+\label{utils_8c}\index{utils.\-c@{utils.\-c}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}utils.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{utils_8c_a5e0350f9687b8681d007255bac5413e4}{F\-\_\-ou\-\_\-\-D\-\_\-ou\-\_\-\-E} (char $\ast$ag, \hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+char $\ast$ \hyperlink{utils_8c_aa57cfa9e28e46dcd8733e26ee6b1f1a1}{completa\-\_\-\-Fs} (char $\ast$ag, \hyperlink{structproteina}{proteina} $\ast$p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{utils_8c_aa57cfa9e28e46dcd8733e26ee6b1f1a1}{\index{utils.\-c@{utils.\-c}!completa\-\_\-\-Fs@{completa\-\_\-\-Fs}}
+\index{completa\-\_\-\-Fs@{completa\-\_\-\-Fs}!utils.c@{utils.\-c}}
+\subsubsection[{completa\-\_\-\-Fs}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ completa\-\_\-\-Fs (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ag, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{utils_8c_aa57cfa9e28e46dcd8733e26ee6b1f1a1}
+Introduz 'F' enquanto o tamanho do dobrar for menor ao tamanho da sequência seq -\/ 1 
+\begin{DoxyParams}{Parameters}
+{\em recebe} & string com os argumentos do comando dobras e a proteina. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string de argumentos completada com caracteres'F' 
+\end{DoxyReturn}
+\hypertarget{utils_8c_a5e0350f9687b8681d007255bac5413e4}{\index{utils.\-c@{utils.\-c}!F\-\_\-ou\-\_\-\-D\-\_\-ou\-\_\-\-E@{F\-\_\-ou\-\_\-\-D\-\_\-ou\-\_\-\-E}}
+\index{F\-\_\-ou\-\_\-\-D\-\_\-ou\-\_\-\-E@{F\-\_\-ou\-\_\-\-D\-\_\-ou\-\_\-\-E}!utils.c@{utils.\-c}}
+\subsubsection[{F\-\_\-ou\-\_\-\-D\-\_\-ou\-\_\-\-E}]{\setlength{\rightskip}{0pt plus 5cm}int F\-\_\-ou\-\_\-\-D\-\_\-ou\-\_\-\-E (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ag, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{utils_8c_a5e0350f9687b8681d007255bac5413e4}
+Testa se os argumentos são todos 'F' ou 'D' ou 'E'. 
+\begin{DoxyParams}{Parameters}
+{\em recebe} & um string com os argumentos do comando dobras. Recebe também a proteina. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se string contiver F's ou D's ou E's. . Retorna 0 caso contrário. 
+\end{DoxyReturn}

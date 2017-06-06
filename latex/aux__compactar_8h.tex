@@ -1,0 +1,110 @@
+\hypertarget{aux__compactar_8h}{\section{aux\-\_\-compactar.\-h File Reference}
+\label{aux__compactar_8h}\index{aux\-\_\-compactar.\-h@{aux\-\_\-compactar.\-h}}
+}
+{\ttfamily \#include \char`\"{}estru.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{aux__compactar_8h_a74651fd9c9fc6e9c1339cf8d530e71b4}{compacta} (\hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+void \hyperlink{aux__compactar_8h_a0c4f4937bc559d21f16d7e38e7ad60f9}{g3} (int i, int j, int k, int conta, \hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+void \hyperlink{aux__compactar_8h_a464640f6d0664ceba0b98c097f034edd}{g2} (int i, int j, int k, int conta, \hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+void \hyperlink{aux__compactar_8h_a84cefa31d3baf26769ecffa1f4e7aa5e}{g1} (int i, int j, int k, int conta, \hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+void \hyperlink{aux__compactar_8h_a8777c29f9088fe4e1c1bd5755fd82d22}{imprime\-\_\-compactado} (\hyperlink{structproteina}{proteina} $\ast$p)
+\item 
+void \hyperlink{aux__compactar_8h_abca91f381d7a5b4894861f7612da9508}{itoa0} (int n, int $\ast$k, \hyperlink{structproteina}{proteina} $\ast$p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{aux__compactar_8h_a74651fd9c9fc6e9c1339cf8d530e71b4}{\index{aux\-\_\-compactar.\-h@{aux\-\_\-compactar.\-h}!compacta@{compacta}}
+\index{compacta@{compacta}!aux_compactar.h@{aux\-\_\-compactar.\-h}}
+\subsubsection[{compacta}]{\setlength{\rightskip}{0pt plus 5cm}void compacta (
+\begin{DoxyParamCaption}
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{aux__compactar_8h_a74651fd9c9fc6e9c1339cf8d530e71b4}
+Compacta uma sequência de 'A' e 'B' em grupos de 3 de 2 e de 1, de forma a obter uma string com o menor número possível de caracteres. 
+\begin{DoxyParams}{Parameters}
+{\em Proteina.} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{aux__compactar_8h_a84cefa31d3baf26769ecffa1f4e7aa5e}{\index{aux\-\_\-compactar.\-h@{aux\-\_\-compactar.\-h}!g1@{g1}}
+\index{g1@{g1}!aux_compactar.h@{aux\-\_\-compactar.\-h}}
+\subsubsection[{g1}]{\setlength{\rightskip}{0pt plus 5cm}void g1 (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{int}]{k, }
+\item[{int}]{conta, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{aux__compactar_8h_a84cefa31d3baf26769ecffa1f4e7aa5e}
+Agrupa em grupos de 1, recursivamente uma string de 'A' e 'B' 
+\begin{DoxyParams}{Parameters}
+{\em Marcadores} & de posições e incrementador. Recebe também a proteina. \\
+\hline
+\end{DoxyParams}
+\hypertarget{aux__compactar_8h_a464640f6d0664ceba0b98c097f034edd}{\index{aux\-\_\-compactar.\-h@{aux\-\_\-compactar.\-h}!g2@{g2}}
+\index{g2@{g2}!aux_compactar.h@{aux\-\_\-compactar.\-h}}
+\subsubsection[{g2}]{\setlength{\rightskip}{0pt plus 5cm}void g2 (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{int}]{k, }
+\item[{int}]{conta, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{aux__compactar_8h_a464640f6d0664ceba0b98c097f034edd}
+Agrupa em grupos de 2, recursivamente uma string de 'A' e 'B' 
+\begin{DoxyParams}{Parameters}
+{\em Marcadores} & de posições e incrementador. Recebe também a proteina. \\
+\hline
+\end{DoxyParams}
+\hypertarget{aux__compactar_8h_a0c4f4937bc559d21f16d7e38e7ad60f9}{\index{aux\-\_\-compactar.\-h@{aux\-\_\-compactar.\-h}!g3@{g3}}
+\index{g3@{g3}!aux_compactar.h@{aux\-\_\-compactar.\-h}}
+\subsubsection[{g3}]{\setlength{\rightskip}{0pt plus 5cm}void g3 (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{int}]{k, }
+\item[{int}]{conta, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{aux__compactar_8h_a0c4f4937bc559d21f16d7e38e7ad60f9}
+Agrupa em grupos de 3, recursivamente uma string de 'A' e 'B' 
+\begin{DoxyParams}{Parameters}
+{\em Marcadores} & de posições e incrementador. Recebe também a proteina. \\
+\hline
+\end{DoxyParams}
+\hypertarget{aux__compactar_8h_a8777c29f9088fe4e1c1bd5755fd82d22}{\index{aux\-\_\-compactar.\-h@{aux\-\_\-compactar.\-h}!imprime\-\_\-compactado@{imprime\-\_\-compactado}}
+\index{imprime\-\_\-compactado@{imprime\-\_\-compactado}!aux_compactar.h@{aux\-\_\-compactar.\-h}}
+\subsubsection[{imprime\-\_\-compactado}]{\setlength{\rightskip}{0pt plus 5cm}void imprime\-\_\-compactado (
+\begin{DoxyParamCaption}
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{aux__compactar_8h_a8777c29f9088fe4e1c1bd5755fd82d22}
+Imprime a string compactada. 
+\begin{DoxyParams}{Parameters}
+{\em Proteina.} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{aux__compactar_8h_abca91f381d7a5b4894861f7612da9508}{\index{aux\-\_\-compactar.\-h@{aux\-\_\-compactar.\-h}!itoa0@{itoa0}}
+\index{itoa0@{itoa0}!aux_compactar.h@{aux\-\_\-compactar.\-h}}
+\subsubsection[{itoa0}]{\setlength{\rightskip}{0pt plus 5cm}void itoa0 (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int $\ast$}]{k, }
+\item[{{\bf proteina} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{aux__compactar_8h_abca91f381d7a5b4894861f7612da9508}
+\begin{DoxyVerb}Recebe um número e um apontador para um número e colaca o número no array de forma inversa.Repõe-lhe a ordem no campo compact (proteina compactada)
+\end{DoxyVerb}
+ da proteina na devida posição. 
+\begin{DoxyParams}{Parameters}
+{\em Número} & que se pretende de repetições de (ex\-: (A\-B)2) e apontador do número com a posição na proteina compactada. \\
+\hline
+\end{DoxyParams}
